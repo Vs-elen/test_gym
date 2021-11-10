@@ -1,0 +1,15 @@
+@import url(./vendor/fonts.css);
+@import url(./blocks/header.css);
+@import url(./blocks/banner.css);
+@import url(./blocks/recreation.css);
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+

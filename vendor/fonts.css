@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'FugazOne';
+    font-style: regular;
+    font-weight: 400;
+    src: url("./fonts/FugazOne-Regular.woff") format("woff"),
+        url("./fonts/FugazOne-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: regular;
+    font-weight: 400;
+    src: url("./fonts/open-sans-v27-latin-regular.woff") format("woff"),
+        url("./fonts/open-sans-v27-latin-regular.woff2") format("woff2");
+}

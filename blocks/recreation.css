@@ -1,0 +1,261 @@
+.recreation {
+    min-height: 1120px;
+    background-color: #F8F8F8;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recreation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 138px;
+    right: -180px;
+    z-index: 0;
+    background: url('../images/bg.svg') 0 0 no-repeat;
+}
+
+.recreation__content {
+    margin-left: 60px;
+    margin-right: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recreation__content-title {
+    max-width: 549px;
+}
+
+.recreation__title {
+    margin: 0;
+    font-family: FugazOne;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.recreation__info {
+    max-width: 500px;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #292929;
+}
+
+.recreation__text {
+    max-width: 648px;
+}
+
+.recreation__text-content {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #292929;
+}
+
+.recreation__text-link {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #EB5B1F;
+    display: inline-block;
+    height: 28px;
+    text-decoration: none;
+    border-bottom: 1px solid #EB5B1F;
+}
+
+.recreation__slider {
+    height: 478px;
+    margin-top: 104px;
+}
+
+.splide__slide-one {
+    width: 777px;
+    height: 478px;
+    background: no-repeat url("../images/slider1.jpg")
+}
+
+.splide__slide-two {
+    width: 777px;
+    height: 478px;
+    background: no-repeat url("../images/slider2.jpg")
+}
+
+.splide__slide-three {
+    width: 777px;
+    height: 478px;
+    background: no-repeat url("../images/slider3.jpg")
+}
+
+
+.recreation__slider-btn {
+    position: absolute;
+    left: -13px;
+    width: 37px;
+    height: 478px;
+    background-color: #1B3A1B;
+    opacity: 1;
+
+    z-index: 3;
+}
+
+.recreation__slider-prev {
+    position: absolute;
+    left: -18px;
+    top: 209px;
+    color: #fff;
+    font-family: FugazOne;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+}
+
+.recreation__slider-btn_next {
+    position: absolute;
+    right: -15px;
+    width: 37px;
+    height: 478px;
+    background-color: #B44619;
+    opacity: 1;
+
+    z-index: 3;
+}
+
+.recreation__slider-next {
+    position: absolute;
+    right: -1px;
+    top: 209px;
+    color: #fff;
+    font-family: FugazOne;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+}
+
+.splide__slide-btn {
+    width: 142px;
+    height: 44px;
+    border: none;
+    background-color: #EB6427;
+    color: #fff;
+    font-family: FugazOne;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide__frame {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 375px) {
+    .recreation {
+        min-height: 375px;
+        padding-top: 60px;
+    }
+
+    .recreation::before {
+        top: 138px;
+        right: 0;
+
+    }
+
+    .recreation__content {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recreation__content-title {
+        max-width: 333px;
+    }
+
+    .recreation__title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .recreation__info {
+        max-width: 323px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .recreation__text {
+        max-width: 343px;
+    }
+
+    .recreation__text-content {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+
+    .recreation__slider {
+        height: 198px;
+        margin-top: 54px;
+        margin-bottom: 54px;
+    }
+
+    .splide__slide-one {
+        width: 321px;
+        height: 198px;
+    }
+
+    .splide__slide-two {
+        width: 321px;
+        height: 198px;
+    }
+
+    .splide__slide-three {
+        width: 321px;
+        height: 198px;
+    }
+
+
+
+    .splide__arrows {
+        display: none;
+    }
+
+
+    .splide__slide-btn {
+        width: 132px;
+        height: 39px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    /* .splide__frame {
+        width: 321px;
+        height: 198px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }  */
+}
