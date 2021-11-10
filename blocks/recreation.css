@@ -170,7 +170,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
     .recreation {
         min-height: 375px;
         padding-top: 60px;
@@ -249,13 +249,5 @@
         font-size: 14px;
         line-height: 20px;
     }
-
-
-    /* .splide__frame {
-        width: 321px;
-        height: 198px;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }  */
+ 
 }
