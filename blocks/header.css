@@ -1,16 +1,17 @@
 .header {
-  width: 100%;
+  width: 1440px;
+  height: 123px;
+  position: fixed;
+  z-index: 99;
 }
 
-.header__contacts {
-  width: 1440px;
+.header__contacts {  
+  max-width: 1440px;
+  width: 100%;
   height: 47px;
   background-color: #F1F1F1;
   display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  z-index: 99;
+  justify-content: flex-end; 
 }
 
 .header__contacts_mobile {
@@ -23,9 +24,6 @@
   padding-right: 34px;
 }
 
-.header__contact:last-child {
-  padding-right: 60px;
-}
 
 .header__icon {
   width: 17px;
@@ -42,21 +40,11 @@
 }
 
 .header__menu {
+  position: fixed;
+  max-width: 1440px;
   height: 76px;
-  position: relative;
   width: 100%;
   background-color: #fff;
-}
-
-.header__margin {
-  margin-top: 47px;
-}
-
-.sticky {
-  max-width: 1440px;
-  position: fixed;
-  top: 0;
-  z-index: 99;
 }
 
 .header__logo {
@@ -167,6 +155,11 @@
 }
 
 @media screen and (max-width: 375px) {
+.header {
+  width: 375px;
+  top: 0;
+}
+
   .header__contacts {
     width: 375px;
     height: 39px;
