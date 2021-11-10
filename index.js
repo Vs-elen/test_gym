@@ -17,7 +17,7 @@ function scroll() {
     document.getElementById("head").style.position = "fixed";
     document.getElementById("head").style.top = "0";
     document.getElementById("menu").style.top = "39px";
-    if (document.body.clientWidth > 375) {
+    if (document.body.clientWidth > 380) {
       document.getElementById("menu").style.marginTop = "47px";
     }
 

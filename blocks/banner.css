@@ -129,7 +129,7 @@ button:hover {
 .image-container {
   display: none;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .banner {
     min-height: 677px;
     width: 100%;
