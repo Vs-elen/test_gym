@@ -1,29 +1,31 @@
 // header sticky
 
+
+
+
+
 window.onscroll = function () {
-  topScroll();
   scroll();
 };
 
-let header = document.querySelector('.header__menu')
-let sticky = header.offsetTop;
+console.log(document.body.clientWidth)
 
-function topScroll() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 function scroll() {
-  var currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    header.classList.add("header__margin");
+    document.getElementById("head").style.position = "fixed";
     document.getElementById("head").style.top = "0";
-  } else {
-    header.classList.remove("header__margin");
+    document.getElementById("menu").style.top = "39px";
+    if (document.body.clientWidth > 375) {
+      document.getElementById("menu").style.marginTop = "47px";
+    }
+
+    document.getElementById("menu").style.marginTop = "0";
+  } else if (prevScrollpos < currentScrollPos) {
+    document.getElementById("menu").style.top = "0";
+    document.getElementById("menu").style.marginTop = "0";
+    document.getElementById("head").style.position = "fixed";
     document.getElementById("head").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
